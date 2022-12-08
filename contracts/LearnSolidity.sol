@@ -2,15 +2,16 @@
 pragma solidity ^0.8.9;
 
 contract LearnSolidity {
-    string name;
-    uint age;
+    string public name;
+    uint public age;
 
     constructor(string memory _name, uint _age) {
         name = _name;
         age = _age;
     }
 
-    function replaceName(string memory _name) public {
+    function replaceName(string memory _name, uint _number) public {
+        require(_number > 1, "kurang masuk ilmune boss");
         name = _name;
     }
 }
