@@ -9,4 +9,8 @@ contract LearnSolidity {
         name = _name;
         age = _age;
     }
+
+    function replaceName(string memory _name) public {
+        name = _name;
+    }
 }
